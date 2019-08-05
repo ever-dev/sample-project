@@ -1,0 +1,15 @@
+.finish {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  .comments {
+    font-size: 48px;
+    color: #fff;
+    i {
+      color: #07c493;
+      margin-right: 20px;
+    }
+    margin-bottom: 50px;
+  }
+}
