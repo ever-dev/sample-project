@@ -2,17 +2,19 @@
   width: 100%;
   height: 100%;
   color: #fff;
-  padding: 100px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   .toolbar {
     font-size: 14px;
     width: 100%;
     color: #fff;
     text-align: right;
+    margin-top: 30px;
     margin-bottom: 50px;
+    padding: 0 100px;
     a {
       cursor: pointer;
     }
@@ -29,9 +31,62 @@
       background-color: #fff;
       border-radius: 4px;
       box-shadow: 0px 80px 100px rgba(4, 21, 81, 0.75);
-      padding: 30px;
+
+      text-align: left;
+      color: #786d6c;
       .form-title {
         color: #12266D;
+        text-align: center;
+        padding: 30px 0 0;
+      }
+      .form-control {
+        background-color: rgba(38, 45, 83, 0.05);
+        border: none;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+      .input-group {
+        margin-bottom: 10px;
+        .form-control {
+          margin-bottom: 0;
+        }
+      }
+      .action {
+        padding: 30px;
+        border-top: 1px solid #e9eeff;
+        text-align: right;
+        margin: 0;
+      }
+      .form-content {
+        padding: 30px;
+      }
+
+      .add-btn {
+        background-color: #f4f5f6;
+        color: #07c493;
+        border: none;
+      }
+      .remove-btn {
+        background-color: rgba(236, 238, 241, 0.75);
+        color: #786D6C;
+        opacity: .5;
+        border: none;
+      }
+      .calendar-badge {
+        color: #fff;
+        background: #EA3F58;
+      }
+      .btn-group {
+        .btn {
+          box-shadow: none;
+          background: rgba(38, 45, 83, .05);
+          color: #786d6c;
+          border: none;
+          &.active {
+            background: #2785E3;
+            color: #fff;
+          }
+        }
       }
     }
   }
