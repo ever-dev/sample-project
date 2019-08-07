@@ -16,7 +16,7 @@ class SchoolStatus extends React.Component {
         stepCount={this.props.stepCount}
         prevPage={this.props.prevPage}>
         <h4 className="form-title">School Status</h4>
-        <div class="form-content">
+        <div className="form-content">
           <Form.Group className="d-flex flex-column">
             <ButtonGroup>
               <Button className={this.state.locked ? 'col-6 active' : 'col-6'} onClick={() => {

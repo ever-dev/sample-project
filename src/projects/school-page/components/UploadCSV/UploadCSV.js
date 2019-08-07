@@ -16,7 +16,7 @@ class UploadCSV extends React.Component {
               <InputGroup.Prepend>
                 <InputGroup.Text>Upload Schedule Dates CSV</InputGroup.Text>
               </InputGroup.Prepend>
-              <Form.Control as="file"/>
+              <Form.Control type="text"/>
             </InputGroup>
           </Form.Group>
           <Form.Group>
@@ -24,7 +24,7 @@ class UploadCSV extends React.Component {
               <InputGroup.Prepend>
                 <InputGroup.Text>Upload Classes CSV</InputGroup.Text>
               </InputGroup.Prepend>
-              <Form.Control as="file"/>
+              <Form.Control type="text"/>
             </InputGroup>
           </Form.Group>
           <Form.Group>
@@ -32,7 +32,7 @@ class UploadCSV extends React.Component {
               <InputGroup.Prepend>
                 <InputGroup.Text>Upload Staff CSV</InputGroup.Text>
               </InputGroup.Prepend>
-              <Form.Control as="file"/>
+              <Form.Control type="text"/>
             </InputGroup>
           </Form.Group>
         </div>
