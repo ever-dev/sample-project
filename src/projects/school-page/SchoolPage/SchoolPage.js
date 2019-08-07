@@ -4,16 +4,16 @@ import '@fortawesome/fontawesome-free/css/solid.css';
 import '@fortawesome/fontawesome-free/css/brands.css';
 import '@fortawesome/fontawesome-free/css/all.css';
 
-import './SchoolPageComponent.scss';
+import './SchoolPage.scss';
 
-import StartComponent from './../StartComponent/StartComponent';
-import SchoolDetail from './../SchoolDetails/SchoolDetails';
-import ScheduleType from './../ScheduleType/ScheduleType';
-import UploadCSV from './../UploadCSV/UploadCSV';
-import SchoolStatus from './../SchoolStatus/SchoolStatus';
-import FinishComponent from './../FinishComponent/FinishComponent';
+import StartComponent from './../components/StartComponent/StartComponent';
+import SchoolDetail from './../components/SchoolDetails/SchoolDetails';
+import ScheduleType from './../components/ScheduleType/ScheduleType';
+import UploadCSV from './../components/UploadCSV/UploadCSV';
+import SchoolStatus from './../components/SchoolStatus/SchoolStatus';
+import FinishComponent from './../components/FinishComponent/FinishComponent';
 
-function SchoolPageComponent() {
+function SchoolPage() {
   const [curStep, setCurStep] = React.useState(0);
   const totalPages = 6;
   const stepCount = 4;
@@ -42,4 +42,4 @@ function SchoolPageComponent() {
   );
 }
 
-export default SchoolPageComponent;
+export default SchoolPage;
