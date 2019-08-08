@@ -66,13 +66,8 @@ class MapBoxComponent extends React.Component {
     return (
       <ReactMapGL
         {...this.state.viewport}
-        onViewportChange={(viewport) => {
-          const {width, height, latitude, longitude} = viewport;
-          const oldViewport = this.state.viewport;
-          this.setState({ viewport: {
-            width, height, latitude, longitude, zoom: oldViewport.zoom
-          }})
-        }}
+        scrollZoom = {null}
+        onViewportChange={(viewport) => this.setState({viewport})}
         mapboxApiAccessToken={this.TOKEN}
       >
         {pointmap}
